@@ -2,29 +2,246 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
 <!--[if IE 9]>         <html class="no-js gt-ie9 ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js gt-ie9"> <!--<![endif]-->
-  <head>
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8"> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Test Web Project | Social Sweethearts</title>
-    <meta name="description" content="">
-    <meta name="robots" content="all">
-    
-    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    
-    <link rel="icon" type="image/ico" href="favicon.ico">
+	<title>Test Web Project | Social Sweethearts</title>
+	<meta name="description" content="">
+	<meta name="robots" content="all">
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
 
-    <!-- Modernizer, cause some browsers suck -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<link rel="icon" type="image/ico" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://seiyria.com/bootstrap-slider/css/bootstrap-slider.css">
+	
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Modernizer, cause some browsers suck -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
+ 
+	<header class="header">
+		<div class="bgcolor--text">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="header--title">How much does your dream car cost?</h1>
+						<h3 class="header--subtitle">Create the Car that’s the perfect fit with your lifestyle and check the price of it.</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="page--first">
+		<main class="content">
+			<div class="container">
+				<div class="row row--line">
+					<div class="col-md-3">
+						<h3>Year</h3>
+					</div>
+					<div class="col-md-9 slider--center">
+						<select id="year">
+							<option value="hide">Select a Year</option>
+							<option value="2010">2010</option>
+							<option value="2011">2011</option>
+							<option value="2012">2012</option>
+							<option value="2013">2013</option>
+							<option value="2014">2014</option>
+							<option value="2015">2015</option>
+						</select>
+					</div>
+					 
+				</div>
+				<div class="row row--line">
+					<div class="col-md-3">
+						<h3>Shape</h3>
+					</div>
+					<div class="col-md-9">
+						<div class="row">
+							<div class="col-sm-4">
+								<input type="radio" class="input-radio--disable" value="0" name="shape" id="radio1">
+								<label class="" for="radio1">  
+									<img class="img-responsive" src="img/car1-gray.png" alt="Shape"> 
+								</label>
+							</div>
+						<div class="col-sm-4">
+							<input type="radio" class="input-radio--disable" value="10" name="shape" id="radio2">
+							<label class="" for="radio2">  
+								<img class="img-responsive" src="img/car2-gray.png" alt="Shape"> 
+							</label>
+						</div>
+						<div class="col-sm-4">
+							<input type="radio" class="input-radio--disable" value="20" name="shape" id="radio3">
+							<label class="" for="radio3">  
+								<img class="img-responsive" src="img/car3-gray.png" alt="Shape"> 
+							</label>
+						</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row row--line">
+					<div class="col-md-3">
+						<h3>Max Speed</h3>
+					</div>
+					<div class="col-md-9 slider--center">
+						<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="120" data-slider-max="300" data-slider-step="10" data-slider-value="180"/>
+					</div>
+				</div>  
+				<div class="row row--line">
+					<div class="col-md-3">
+						<h3>Color</h3>
+					</div>
+					<div class="col-md-9">
+						<div class="custom-radios">
+							<div class="radios--inline">
+								<input type="radio" id="radio4" name="color" value="0">
+								<label for="radio4">
+									<span class="radio--circle"></span>
+								</label>
+							</div>
+
+							<div class="radios--inline">
+								<input type="radio" id="radio5" name="color" value="10">
+								<label for="radio5">
+									<span class="radio--circle"></span>
+								</label>
+							</div>
+
+							<div class="radios--inline">
+								<input type="radio" id="radio6" name="color" value="20">
+								<label for="radio6">
+									<span class="radio--circle" ></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>  
+				<div class="row row--line">
+					<div class="col-md-3">
+						<h3>Tires</h3>
+					</div>
+					<div class="col-md-9">
+						<div class="row">
+							<div class="col-sm-4">
+								<input type="radio" class="input-radio--disable" value="0" name="tire" id="radio7">
+								<label class="tire" for="radio7">  
+									<img class="img-responsive" src="img/tire-check-1.png" alt="Tire"> 
+								</label>
+							</div>
+						<div class="col-sm-4">
+							<input type="radio" class="input-radio--disable" value="10" name="tire" id="radio8">
+							<label class="tire" for="radio8">  
+								<img class="img-responsive" src="img/tire-check-2.png" alt="Tire"> 
+							</label>
+						</div>
+						<div class="col-sm-4">
+							<input type="radio" class="input-radio--disable" value="20" name="tire" id="radio9">
+							<label class="tire" for="radio9">  
+								<img class="img-responsive" src="img/tire-check-3.png" alt="Tire"> 
+							</label>
+						</div>
+						</div>
+					</div>
+				</div> 
+				<div class="row row--line">
+					<div class="col-md-3">
+						<h3>Windows</h3>
+					</div>
+					<div class="col-md-9">
+						<div class="row">
+							<div class="col-sm-4">
+								<input type="radio" class="input-radio--disable" value="0" name="window" id="radio10">
+								<label class="window" for="radio10">  
+									<img class="img-responsive" src="img/window-1.png" alt="Window"> 
+								</label>
+							</div>
+						<div class="col-sm-4">
+							<input type="radio" class="input-radio--disable" value="10" name="window" id="radio11">
+							<label class="window" for="radio11">  
+								<img class="img-responsive" src="img/window-2.png" alt="Window"> 
+							</label>
+						</div>
+						<div class="col-sm-4">
+							<input type="radio" class="input-radio--disable" value="20" name="window" id="radio12">
+							<label class="window" for="radio12">  
+								<img class="img-responsive" src="img/window-3.png" alt="Window"> 
+							</label>
+						</div>
+						</div>
+					</div>
+				</div> 
+
+				<div class="row">
+					<div class="col-md-12">
+						<img id="img1" class="hidden" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61QJKasrSs4z7nmaasUZ7OZzXoZETUM5UcclFTjayH6drjAiI">
+						<img id="img2" class="hidden" src="https://image.flaticon.com/icons/png/128/138/138339.png">
+
+						<div class="col-md-12 text-center">
+							<input type="submit" name="submit" value="submit" id="submit" class="btn btn-primary" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
   
-  
+	<footer>
+		<div class="container">
+			<div class="col-md-12">
+				<img class="img-responsive footer--img" src="img/footer-car.png" alt="Footer image">
+				<p class="footer--copy">
+					&copy; Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> Social Sweethearts&reg; GmbH. All Rights Reserved.
+				</p>
+			</div>
+		</div>
+	</footer>
+ 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+  <script src="js/main.js"></script>
+  
+  
+  
+
+<script>
+
+  // With JQuery
+$('#ex1').slider({
+	formatter: function(value) {
+		return  value + ' km/h';
+	}
+});
+$('#ex21').slider({
+	formatter: function(value) {
+		return  value + ' years';
+	}
+});
+
+    $(document).ready(function () {
+        $("#submit").unbind().on("click", function () {
+            if ($("#radio1").is(':checked')) {
+                $("#img1").removeClass("hidden");
+                $("#img2").addClass("hidden");
+            }
+            else {
+                $("#img2").removeClass("hidden");
+                $("#img1").addClass("hidden");
+            }
+        });
+    });
+	
+	
+
+</script>
+  
+  
 </body>
 </html>
