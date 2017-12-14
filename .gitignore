@@ -41,5 +41,4 @@ Thumbs.db
 node_modules/
 .sass-cache
 *.css.map
-build/
-dist/
+
