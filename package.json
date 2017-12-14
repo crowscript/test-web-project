@@ -1,0 +1,20 @@
+{
+  "name": "test-web-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(git://github.com/crowscript/test-web-project.git)"
+  },
+  "author": "Stanislav Vranic <vranic.s@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-path": "^4.0.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
